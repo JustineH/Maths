@@ -19,9 +19,7 @@ int main(int argc, const char * argv[]) {
         ScoreKeeper *scoreTab = [[ScoreKeeper alloc] init];
         
         printf("Welcome to the Random Addition Math Game!\n");
-        //printf("Would you like to play again?\n");
-        
-        
+ 
         while (gameOn == YES)
         {
             AdditionQuestion *questionUser = [[AdditionQuestion alloc] init];
