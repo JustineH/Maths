@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "54382E68B307CD12D5A7B1A8F5CF8D4D1A14A3C6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E1FD06DC68DB0475362C57B500FA0E13EFC729E2" : 9223372036854775807,
+    "54382E68B307CD12D5A7B1A8F5CF8D4D1A14A3C6" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7826F21D-FB28-4CAE-AAFF-DD030D7DD978",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E1FD06DC68DB0475362C57B500FA0E13EFC729E2" : "",
+    "54382E68B307CD12D5A7B1A8F5CF8D4D1A14A3C6" : "Maths\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Maths",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Maths.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JustineH\/Maths.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54382E68B307CD12D5A7B1A8F5CF8D4D1A14A3C6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JustineH\/Boxes.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E1FD06DC68DB0475362C57B500FA0E13EFC729E2"
+    }
+  ]
+}

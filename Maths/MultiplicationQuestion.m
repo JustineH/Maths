@@ -1,14 +1,14 @@
 //
-//  AdditionQuestion.m
+//  MultiplicationQuestion.m
 //  Maths
 //
 //  Created by Justine Herman on 11/2/16.
 //  Copyright © 2016 Justine Herman. All rights reserved.
 //
 
-#import "AdditionQuestion.h"
+#import "MultiplicationQuestion.h"
 
-@implementation AdditionQuestion
+@implementation MultiplicationQuestion
 
 -(id)init {
     
@@ -20,8 +20,8 @@
 
 -(void)generateQuestion {
     
-    super.answer = super.leftValue + super.rightValue;
-    super.question = [NSString stringWithFormat:@"%ld + %ld =\n", super.leftValue, super.rightValue];
+    super.answer = super.leftValue * super.rightValue;
+    super.question = [NSString stringWithFormat:@"%ld * %ld =\n", (long)super.leftValue, (long)super.rightValue];
     NSLog(@"%@", super.question);
 }
 

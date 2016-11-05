@@ -7,28 +7,31 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AdditionQuestion.h"
+#import "Question.h"
 #import "InputHandler.h"
 #import "ScoreKeeper.h"
+#import "QuestionManager.h"
+#import "QuestionFactory.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         BOOL gameOn = YES;
-        
+        QuestionManager *questionManager = [[QuestionManager alloc] init];
+        QuestionFactory *questionFactory = [[QuestionFactory alloc] init];
         ScoreKeeper *scoreTab = [[ScoreKeeper alloc] init];
+        InputHandler *userInput = [[InputHandler alloc] init];
         
         printf("Welcome to the Random Addition Math Game!\n");
  
-        while (gameOn == YES)
+        while (gameOn)
         {
-            AdditionQuestion *questionUser = [[AdditionQuestion alloc] init];
-            NSLog(@"What does %@ equal?", questionUser.question);
+            Question *questionUser = [questionFactory generateRandomQuestion];
+            [questionManager.questions addObject:questionUser];
             
-            //Create an instance of InputHandler
-            InputHandler *userInput = [[InputHandler alloc] init];
             //Get user's input
             NSString *result = userInput.convert;
+            
             //Convert new instance from String to Integer
             NSInteger userAnswer = [result integerValue];
             
@@ -39,10 +42,12 @@ int main(int argc, const char * argv[]) {
             
             if (userAnswer == questionUser.answer) {
                 scoreTab.right = scoreTab.right +1;
-                NSLog(@"Right! %@", [scoreTab score]);
+                NSLog(@"\nRight! %@", [scoreTab score]);
+                NSLog(@"%@", [questionManager timeOutput]);
             } else {
                 scoreTab.wrong = scoreTab.wrong +1;
-                NSLog(@"Wrong! %@", [scoreTab score]);
+                NSLog(@"\nWrong! %@", [scoreTab score]);
+                NSLog(@"%@", [questionManager timeOutput]);
             }
         }
     }

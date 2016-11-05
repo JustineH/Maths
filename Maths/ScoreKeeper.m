@@ -15,7 +15,7 @@
     NSString *scoreKeeping;
     NSInteger totalScore = (long)_right + (long)_wrong;
     CGFloat percentage = ((float)_right/totalScore) * 100;
-    scoreKeeping = [NSString stringWithFormat:@"Your score is: %ld right and %ld wrong -- %f%%\n", (long)_right, (long)_wrong, percentage];
+    scoreKeeping = [NSString stringWithFormat:@"Your score is: %ld right and %ld wrong -- %.2f%%\n", (long)_right, (long)_wrong, percentage];
  
     return scoreKeeping;
 }
